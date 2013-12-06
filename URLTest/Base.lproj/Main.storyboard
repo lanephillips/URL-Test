@@ -25,26 +25,24 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="fDj-Pe-UcT"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="6nn-Lg-dWC">
-                                <rect key="frame" x="20" y="66" width="280" height="21"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZQL-sQ-4Ut">
+                                <rect key="frame" x="0.0" y="66" width="320" height="502"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6nn-Lg-dWC" firstAttribute="top" secondItem="UdK-Cz-RBX" secondAttribute="bottom" constant="8" id="8jD-Cy-Ojm"/>
                             <constraint firstItem="UdK-Cz-RBX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="9FK-d8-rdv"/>
                             <constraint firstItem="UdK-Cz-RBX" firstAttribute="top" secondItem="Aae-uy-tCx" secondAttribute="bottom" constant="20" symbolic="YES" id="KhB-Fh-ULB"/>
-                            <constraint firstItem="6nn-Lg-dWC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="gc0-bB-xv1"/>
-                            <constraint firstAttribute="trailing" secondItem="6nn-Lg-dWC" secondAttribute="trailing" constant="20" id="hIP-OK-ocx"/>
                             <constraint firstAttribute="trailing" secondItem="UdK-Cz-RBX" secondAttribute="trailing" constant="20" id="p3E-Lj-XoR"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="urlLabel" destination="6nn-Lg-dWC" id="4YS-3T-gbg"/>
+                        <outlet property="urlLabel" destination="ZQL-sQ-4Ut" id="jFS-Fp-Wt5"/>
                         <outlet property="urlText" destination="UdK-Cz-RBX" id="cCx-HC-gs1"/>
                     </connections>
                 </viewController>

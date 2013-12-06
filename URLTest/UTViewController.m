@@ -12,7 +12,7 @@
 <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *urlText;
-@property (weak, nonatomic) IBOutlet UILabel *urlLabel;
+@property (weak, nonatomic) IBOutlet UITextView *urlLabel;
 
 @end
 
@@ -45,26 +45,26 @@
     
     NSMutableString* s = [[NSMutableString alloc] init];
     
-    [s appendFormat:@"absoluteString: %@\n", url.absoluteString];
-    [s appendFormat:@"absoluteURL: %@\n", url.absoluteURL];
-    [s appendFormat:@"baseURL: %@\n", url.baseURL];
-    [s appendFormat:@"fileSystemRepresentation: %s\n", url.fileSystemRepresentation];
-    [s appendFormat:@"fragment: %@\n", url.fragment];
-    [s appendFormat:@"host: %@\n", url.host];
-    [s appendFormat:@"lastPathComponent: %@\n", url.lastPathComponent];
-    [s appendFormat:@"parameterString: %@\n", url.parameterString];
-    [s appendFormat:@"password: %@\n", url.password];
-    [s appendFormat:@"path: %@\n", url.path];
-    [s appendFormat:@"pathComponents: %@\n", url.pathComponents];
-    [s appendFormat:@"pathExtension: %@\n", url.pathExtension];
-    [s appendFormat:@"port: %@\n", url.port];
-    [s appendFormat:@"query: %@\n", url.query];
-    [s appendFormat:@"relativePath: %@\n", url.relativePath];
-    [s appendFormat:@"relativeString: %@\n", url.relativeString];
-    [s appendFormat:@"resourceSpecifier: %@\n", url.resourceSpecifier];
-    [s appendFormat:@"scheme: %@\n", url.scheme];
-    [s appendFormat:@"standardizedURL: %@\n", url.standardizedURL];
-    [s appendFormat:@"user: %@\n", url.user];
+    [s appendFormat:@"absoluteString: %@\n\n", url.absoluteString];
+    [s appendFormat:@"absoluteURL: %@\n\n", url.absoluteURL];
+    [s appendFormat:@"baseURL: %@\n\n", url.baseURL];
+    [s appendFormat:@"fileSystemRepresentation: %s\n\n", url.fileSystemRepresentation];
+    [s appendFormat:@"fragment: %@\n\n", url.fragment];
+    [s appendFormat:@"host: %@\n\n", url.host];
+    [s appendFormat:@"lastPathComponent: %@\n\n", url.lastPathComponent];
+    [s appendFormat:@"parameterString: %@\n\n", url.parameterString];
+    [s appendFormat:@"password: %@\n\n", url.password];
+    [s appendFormat:@"path: %@\n\n", url.path];
+    [s appendFormat:@"pathComponents: %@\n\n", url.pathComponents];
+    [s appendFormat:@"pathExtension: %@\n\n", url.pathExtension];
+    [s appendFormat:@"port: %@\n\n", url.port];
+    [s appendFormat:@"query: %@\n\n", url.query];
+    [s appendFormat:@"relativePath: %@\n\n", url.relativePath];
+    [s appendFormat:@"relativeString: %@\n\n", url.relativeString];
+    [s appendFormat:@"resourceSpecifier: %@\n\n", url.resourceSpecifier];
+    [s appendFormat:@"scheme: %@\n\n", url.scheme];
+    [s appendFormat:@"standardizedURL: %@\n\n", url.standardizedURL];
+    [s appendFormat:@"user: %@\n\n", url.user];
     
     self.urlLabel.text = s;
 }
