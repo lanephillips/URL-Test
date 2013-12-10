@@ -22,7 +22,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.urlText.text = @"http://user:password@host.com:80/path0/path1/file.ext?parm0=val0&parm1=val1#fragment";
+    self.urlText.text = @"http://user:password@host.com:80/path0/path1/file.ext;parm0a/parm0b;parm1?qparm0=qval0&qparm1=qval1#fragment";
     [self parseURL:self.urlText.text];
 }
 
