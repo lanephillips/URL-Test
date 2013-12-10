@@ -25,7 +25,7 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="fDj-Pe-UcT"/>
                                 </connections>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZQL-sQ-4Ut">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQL-sQ-4Ut">
                                 <rect key="frame" x="0.0" y="66" width="320" height="502"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -36,8 +36,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ZQL-sQ-4Ut" firstAttribute="top" secondItem="UdK-Cz-RBX" secondAttribute="bottom" constant="8" id="5mP-iM-DHF"/>
                             <constraint firstItem="UdK-Cz-RBX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="9FK-d8-rdv"/>
+                            <constraint firstItem="3Gp-DK-8BC" firstAttribute="top" secondItem="ZQL-sQ-4Ut" secondAttribute="bottom" id="Da1-n7-omf"/>
                             <constraint firstItem="UdK-Cz-RBX" firstAttribute="top" secondItem="Aae-uy-tCx" secondAttribute="bottom" constant="20" symbolic="YES" id="KhB-Fh-ULB"/>
+                            <constraint firstAttribute="trailing" secondItem="ZQL-sQ-4Ut" secondAttribute="trailing" id="N5t-Yq-jEx"/>
+                            <constraint firstItem="ZQL-sQ-4Ut" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="lWt-5O-0SS"/>
                             <constraint firstAttribute="trailing" secondItem="UdK-Cz-RBX" secondAttribute="trailing" constant="20" id="p3E-Lj-XoR"/>
                         </constraints>
                     </view>
